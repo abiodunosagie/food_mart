@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_application/constants/constants.dart';
-import 'package:food_application/screens/food_card.dart';
+import 'package:food_application/screens/food_details.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -22,7 +22,7 @@ class WelcomeScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('images/photo1.png'))),
+                        image: AssetImage('images/D F F (227).png'))),
               ),
             ),
             const SizedBox(height: 30),
@@ -43,7 +43,7 @@ class WelcomeScreen extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => FoodCard()));
+                        MaterialPageRoute(builder: (context) => FoodDetails()));
                   },
                   child: Container(
                     padding: const EdgeInsets.symmetric(
